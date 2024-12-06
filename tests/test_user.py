@@ -11,7 +11,7 @@ def client():
 class TestUser:
 
     def test_succesful_fetching_a_user(self, client):
-        response = client.get("api/v1/user/1")
+        response = client.get("api/v1/users/1")
 
         assert response.status_code == 200
         assert response.json == {
@@ -21,7 +21,7 @@ class TestUser:
         }
 
     def test_failed_fetching_a_user(self, client):
-        response = client.get("api/v1/user/999")
+        response = client.get("api/v1/users/999")
 
         assert response.status_code == 404
         assert response.json["error"] == "user not found"
