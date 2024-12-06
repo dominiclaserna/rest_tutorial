@@ -39,10 +39,20 @@ Press CTRL+C to quit
 
 # Available APIS as of now
 ## Users: Resource for list of available users
-- GET: http://localhost:8888/api/v1/users
+- GET: http://localhost:8888/api/v1/users (type this to your browser address bar and see the magic!)
 - POST: http://localhost:8888/api/v1/users
+- Sample post command using cURL, you can try hitting it:
+  ```curl
+  curl -X POST https://localhost:8888/api/v1/users \
+   -d '{"firstname": "kimi", "lastname": "no nawa"}'  
+  ```
+- Now, try using the GET method again to inspect if the new user data has been inserted.
+
 
 ## User: Resource for single user
 - GET: http://localhost:8888/api/v1/user/<id>
 
+
+# Disclaimer
+- We're not using any database. Hence, data will always be lost after restarting the server.
 
