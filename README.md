@@ -11,6 +11,8 @@
 
 ## Cloning
 - Use SSH to clone this repo
+
+## Setting up dependencies
 - After cloning, open your terminal and cd to this directory
 - Create a python virtualenv: `pyenv virtualenv 3.11.3 restful_tutorial`
 - Activate the virtualenv: `pyenv activate restful_tutorial`
