@@ -7,7 +7,7 @@
 
 ## Mac OS
 - Install pyenv (look for installation guide for MacOS): https://github.com/pyenv/pyenv?tab=readme-ov-file#installation
-- Install python 3.11.3 using pyenv
+- Install python 3.11.3 using pyenv: `pyenv install 3.11.3`
 
 ## Cloning
 - Use SSH to clone this repo
